@@ -1,0 +1,129 @@
+/*GENERAL STYLES*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: hsl(0, 100%, 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.container2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  padding-top: 90px;
+}
+
+.description {
+  margin: 25px 25px 65px 25px;
+}
+
+/*FORM*/
+
+.form-box {
+  background-color: hsl(0, 100%, 100%);
+  box-shadow: 0px 8px hsl(0, 37%, 60%);
+  margin: 0 25px 10px 25px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 25px 0 25px;
+  padding: 16px 0 10px 0;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="text"] {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(251, 4%, 49%);
+  padding: 15px 0 15px 20px;
+  margin: 9px 0 9px 0;
+  border-radius: 5px;
+  border: 0.1px solid hsl(247, 13%, 87%);
+}
+
+input[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 4px hsl(154, 73%, 43%);
+  color: hsl(0, 100%, 100%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0 15px 20px;
+  margin: 9px 0 0 0;
+  border-radius: 5px;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 11px;
+  line-height: 20px;
+  margin: 5px 50px 0 50px;
+  padding-bottom: 20px;
+}
+
+.terms span {
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+
+/*BUTTONS*/
+
+.btn-try {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0px 8px hsl(0, 37%, 60%);
+  padding: 20px 50px 20px 50px;
+  margin: 0 25px 0 25px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.btn-try span {
+  font-weight: 300;
+}
+
+/*FOOTER*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
