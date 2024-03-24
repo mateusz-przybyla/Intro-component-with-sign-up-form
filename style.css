@@ -82,6 +82,10 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
+input[type="submit"]:hover {
+  background-color: hsl(151, 53%, 69%);
+}
+
 .terms {
   color: hsl(246, 25%, 77%);
   font-size: 11px;
@@ -112,6 +116,10 @@ input[type="submit"] {
 
 .btn-try span {
   font-weight: 300;
+}
+
+.btn-try:hover {
+  background-color: hsl(248, 22%, 55%);
 }
 
 /*FOOTER*/
