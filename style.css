@@ -35,6 +35,20 @@ h1 {
   margin: 25px 0 65px 0;
 }
 
+.emptyTextBox {
+  background-image: url(./images/icon-error.svg);
+  background-position: 95%;
+  background-repeat: no-repeat;
+}
+
+.info {
+  color: hsl(0, 100%, 74%);
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: right;
+}
+
 /*FORM*/
 
 .form-box {
@@ -63,6 +77,10 @@ input[type="text"] {
   margin: 9px 0 9px 0;
   border-radius: 5px;
   border: 0.1px solid hsl(247, 13%, 87%);
+}
+
+input[class="emptyTextBox"] {
+  border: 2px solid hsl(0, 69%, 69%);
 }
 
 input[type="submit"] {
