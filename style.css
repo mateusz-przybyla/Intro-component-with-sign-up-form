@@ -76,6 +76,7 @@ input[type="submit"] {
   border-radius: 5px;
   border: 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
@@ -90,9 +91,15 @@ input[type="submit"]:hover {
   padding-bottom: 20px;
 }
 
-.terms span {
+.terms a {
   font-weight: 700;
   color: hsl(0, 100%, 74%);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  color: hsl(0, 66%, 74%);
 }
 
 /*BUTTONS*/
@@ -108,6 +115,7 @@ input[type="submit"]:hover {
   border-radius: 10px;
   border: 0;
   width: 100%;
+  cursor: pointer;
 }
 
 .btn-try span {
@@ -132,7 +140,7 @@ input[type="submit"]:hover {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   main {
     display: flex;
     flex-direction: row;
