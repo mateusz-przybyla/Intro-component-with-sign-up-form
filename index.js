@@ -7,22 +7,18 @@ var password = document.getElementById("password");
 firstName.addEventListener("blur", function () {
   if (firstName.value === "") {
     document.querySelector(".nr1").innerHTML = "First Name cannot be empty";
-    document.querySelector(".nr1").classList.add("info");
-    document.querySelector(".nr1").classList.add("info");
   }
 });
 
 lastName.addEventListener("blur", function () {
   if (lastName.value === "") {
     document.querySelector(".nr2").innerHTML = "Last Name cannot be empty";
-    document.querySelector(".nr2").classList.add("info");
   }
 });
 
 email.addEventListener("blur", function () {
   if (email.value === "") {
     document.querySelector(".nr3").innerHTML = "Look like this is not an email";
-    document.querySelector(".nr3").classList.add("info");
     email.classList.add("ph-color");
     email.placeholder = "email@example/com";
   }
@@ -31,35 +27,29 @@ email.addEventListener("blur", function () {
 password.addEventListener("blur", function () {
   if (password.value === "") {
     document.querySelector(".nr4").innerHTML = "Password cannot be empty";
-    document.querySelector(".nr4").classList.add("info");
   }
 });
 
 submitButton.addEventListener("click", function () {
   if (firstName.value === "") {
     document.querySelector(".nr1").innerHTML = "First Name cannot be empty";
-    document.querySelector(".nr1").classList.add("info");
     firstName.classList.add("emptyTextBox");
     firstName.placeholder = "";
   }
-
   if (lastName.value === "") {
     document.querySelector(".nr2").innerHTML = "Last Name cannot be empty";
-    document.querySelector(".nr2").classList.add("info");
     lastName.classList.add("emptyTextBox");
     lastName.placeholder = "";
   }
 
   if (email.value === "") {
     document.querySelector(".nr3").innerHTML = "Look like this is not an email";
-    document.querySelector(".nr3").classList.add("info");
     email.classList.add("emptyTextBox", "ph-color");
     email.placeholder = "email@example/com";
   }
 
   if (password.value === "") {
     document.querySelector(".nr4").innerHTML = "Password cannot be empty";
-    document.querySelector(".nr4").classList.add("info");
     password.classList.add("emptyTextBox");
     password.placeholder = "";
   }
