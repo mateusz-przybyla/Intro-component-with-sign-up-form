@@ -23,6 +23,7 @@ email.addEventListener("blur", function () {
   if (email.value === "") {
     document.querySelector(".nr3").innerHTML = "Look like this is not an email";
     document.querySelector(".nr3").classList.add("info");
+    email.classList.add("ph-color");
     email.placeholder = "email@example/com";
   }
 });
@@ -50,8 +51,8 @@ submitButton.addEventListener("click", function () {
   if (email.value === "") {
     document.querySelector(".nr3").innerHTML = "Look like this is not an email";
     document.querySelector(".nr3").classList.add("info");
+    email.classList.add("emptyTextBox", "ph-color");
     email.placeholder = "email@example/com";
-    email.classList.add("emptyTextBox");
   }
 
   if (password.value === "") {
