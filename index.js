@@ -40,12 +40,14 @@ submitButton.addEventListener("click", function () {
     document.querySelector(".nr1").innerHTML = "First Name cannot be empty";
     document.querySelector(".nr1").classList.add("info");
     firstName.classList.add("emptyTextBox");
+    firstName.placeholder = "";
   }
 
   if (lastName.value === "") {
     document.querySelector(".nr2").innerHTML = "Last Name cannot be empty";
     document.querySelector(".nr2").classList.add("info");
     lastName.classList.add("emptyTextBox");
+    lastName.placeholder = "";
   }
 
   if (email.value === "") {
@@ -59,5 +61,6 @@ submitButton.addEventListener("click", function () {
     document.querySelector(".nr4").innerHTML = "Password cannot be empty";
     document.querySelector(".nr4").classList.add("info");
     password.classList.add("emptyTextBox");
+    password.placeholder = "";
   }
 });
